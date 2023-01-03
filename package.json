@@ -1,23 +1,23 @@
 {
   "name": "regex-extra",
-  "version": "0.0.0",
-  "description": "Including missing essential functions for Regex",
   "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@7.20.0",
+  "description": "Including missing essential functions for Regex",
+  "author": "alexzhang1030",
+  "license": "MIT",
+  "keywords": [
+    "regex"
+  ],
+  "sideEffects": false,
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
-  "packageManager": "pnpm@7.20.0",
-  "sideEffects": false,
   "scripts": {
     "test": "vitest",
     "build": "tsup",
     "prepublishOnly": "pnpm run build",
     "release": "bumpp --commit --push --tag && pnpm -r publish --access public"
   },
-  "keywords": [
-    "regex"
-  ],
-  "author": "alexzhang1030",
-  "license": "MIT",
   "devDependencies": {
     "@antfu/eslint-config-ts": "^0.34.0",
     "bumpp": "^8.2.1",
