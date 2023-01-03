@@ -2,6 +2,8 @@
 
 [![NPM version](https://img.shields.io/npm/v/regex-extra?color=a1b858&label=)](https://www.npmjs.com/package/regex-extra)
 
+![Logo](resources/Logo.png)
+
 Including missing essential functions for Regex. (ESM Only)
 
 ## Usage
