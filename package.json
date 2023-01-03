@@ -12,6 +12,9 @@
   "sideEffects": false,
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "vitest",
     "build": "tsup",
