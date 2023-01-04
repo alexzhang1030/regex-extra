@@ -9,11 +9,5 @@
       "depTypeList": ["peerDependencies"],
       "enabled": false
     },
-
-    {
-      "matchUpdateTypes": ["major"],
-      "matchPackageNames": ["vue"],
-      "enabled": false
-    }
   ]
 }

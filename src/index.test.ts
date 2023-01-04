@@ -32,11 +32,11 @@ describe('test', () => {
   test('multi captures', () => {
     const RE = /(\d+)(\w+)/
     const reg = new RegexExtra(RE)
-    const str = '123 testing'
+    const str = '123testing'
     expect(reg.captures(str)).toMatchInlineSnapshot(`
       [
-        "12",
-        "3",
+        "123",
+        "testing",
       ]
     `)
     expect(reg.captures(str, 5)).toMatchInlineSnapshot('null')
