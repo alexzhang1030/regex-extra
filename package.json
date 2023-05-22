@@ -22,12 +22,12 @@
     "release": "bumpp --commit --push --tag && pnpm -r publish --access public"
   },
   "devDependencies": {
-    "@antfu/eslint-config-ts": "^0.38.6",
+    "@antfu/eslint-config-ts": "^0.39.1",
     "bumpp": "^9.1.0",
-    "eslint": "^8.40.0",
+    "eslint": "^8.41.0",
     "tsup": "^6.7.0",
     "typescript": "^5.0.4",
-    "vitest": "^0.31.0"
+    "vitest": "^0.31.1"
   },
   "eslintConfig": {
     "extends": "@antfu/eslint-config-ts"
