@@ -2,7 +2,7 @@
   "name": "regex-extra",
   "type": "module",
   "version": "0.1.3",
-  "packageManager": "pnpm@8.6.3",
+  "packageManager": "pnpm@8.6.4",
   "description": "Including missing essential functions for Regex",
   "author": "alexzhang1030",
   "license": "MIT",
@@ -25,7 +25,7 @@
     "@antfu/eslint-config-ts": "^0.39.5",
     "bumpp": "^9.1.1",
     "eslint": "^8.43.0",
-    "tsup": "^7.0.0",
+    "tsup": "^7.1.0",
     "typescript": "^5.1.3",
     "vitest": "^0.32.2"
   },
