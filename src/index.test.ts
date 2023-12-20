@@ -3,7 +3,7 @@ import { RegexExtra } from '.'
 describe('test', () => {
   const RE = /\d+/
   const reg = new RegexExtra(RE)
-  test('findAt', () => {
+  it('findAt', () => {
     const str = '123 testing'
     expect(reg.findAt(str)).toMatchInlineSnapshot(`
       {
@@ -13,12 +13,12 @@ describe('test', () => {
     `)
     expect(reg.findAt(str, 5)).toMatchInlineSnapshot('null')
   })
-  test('isMatch', () => {
+  it('isMatch', () => {
     const str = '123 testing'
     expect(reg.isMatch(str)).toMatchInlineSnapshot('true')
     expect(reg.isMatch(str, 5)).toMatchInlineSnapshot('false')
   })
-  test('captures', () => {
+  it('captures', () => {
     const RE = /(\d+)/
     const reg = new RegexExtra(RE)
     const str = '123 testing'
@@ -29,7 +29,7 @@ describe('test', () => {
     `)
     expect(reg.captures(str, 5)).toMatchInlineSnapshot('null')
   })
-  test('multi captures', () => {
+  it('multi captures', () => {
     const RE = /(\d+)(\w+)/
     const reg = new RegexExtra(RE)
     const str = '123testing'
