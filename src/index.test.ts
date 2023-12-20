@@ -41,4 +41,21 @@ describe('test', () => {
     `)
     expect(reg.captures(str, 5)).toMatchInlineSnapshot('null')
   })
+  it('captures all', () => {
+    const RE = /(\d+)(\w+)/gm
+    const reg = new RegexExtra(RE)
+    const str = '123abc\n123abc'
+    expect(reg.capturesAll(str)).toMatchInlineSnapshot(`
+      [
+        [
+          "123",
+          "abc",
+        ],
+        [
+          "123",
+          "abc",
+        ],
+      ]
+    `)
+  })
 })

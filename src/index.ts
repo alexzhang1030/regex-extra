@@ -30,4 +30,16 @@ export class RegexExtra {
     }
     return null
   }
+
+  capturesAll(str: string, start = 0, end = str.length) {
+    const piece = str.slice(start, end)
+    let result: RegExpExecArray | null
+    const captures: string[][] = []
+    // eslint-disable-next-line no-cond-assign
+    while ((result = this.reg.exec(piece)) !== null) {
+      const [, ...capture] = result
+      captures.push(capture)
+    }
+    return captures
+  }
 }
