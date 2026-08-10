@@ -30,7 +30,8 @@ describe('test', () => {
     expect(reg.captures(str, 5)).toMatchInlineSnapshot('null')
   })
   it('multi captures', () => {
-    const RE = /(\d+)(\w+)/
+    // Use [a-z]+ (not \w+) so digit/letter groups do not overlap for eslint regexp rules
+    const RE = /(\d+)([a-z]+)/
     const reg = new RegexExtra(RE)
     const str = '123testing'
     expect(reg.captures(str)).toMatchInlineSnapshot(`
@@ -42,7 +43,7 @@ describe('test', () => {
     expect(reg.captures(str, 5)).toMatchInlineSnapshot('null')
   })
   it('captures all', () => {
-    const RE = /(\d+)(\w+)/gm
+    const RE = /(\d+)([a-z]+)/g
     const reg = new RegexExtra(RE)
     const str = '123abc\n123abc'
     expect(reg.capturesAll(str)).toMatchInlineSnapshot(`
