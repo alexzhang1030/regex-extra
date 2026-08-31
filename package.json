@@ -2,7 +2,7 @@
   "name": "regex-extra",
   "type": "module",
   "version": "0.2.2",
-  "packageManager": "pnpm@8.12.1",
+  "packageManager": "pnpm@8.15.9",
   "description": "Including missing essential functions for Regex",
   "author": "alexzhang1030",
   "license": "MIT",
@@ -35,10 +35,10 @@
     "bumpp": "^9.11.1",
     "eslint": "^8.57.1",
     "lint-staged": "^15.5.2",
-    "simple-git-hooks": "^2.9.0",
-    "tsup": "^8.0.1",
-    "typescript": "^5.3.3",
-    "vitest": "^1.1.0"
+    "simple-git-hooks": "^2.14.0",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vitest": "^1.6.1"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm exec lint-staged"
