@@ -2,7 +2,7 @@
   "name": "regex-extra",
   "type": "module",
   "version": "0.2.2",
-  "packageManager": "pnpm@8.15.9",
+  "packageManager": "pnpm@12.3.4",
   "description": "Including missing essential functions for Regex",
   "author": "alexzhang1030",
   "license": "MIT",
